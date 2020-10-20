@@ -7,7 +7,7 @@ final class PedestrianWay extends HighWay
     public function __construct()
     {
         $this->nbLane = 1;
-        $this->masxSpeed = 10;
+        $this->maxSpeed = 10;
     }
 
     public function addVehicle()

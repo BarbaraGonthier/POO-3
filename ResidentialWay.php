@@ -6,7 +6,7 @@ final class ResidentialWay extends HighWay
     public function __construct()
     {
         $this->nbLane = 2;
-        $this->masxSpeed = 50;
+        $this->maxSpeed = 50;
     }
 
     public function addVehicle()

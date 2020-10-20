@@ -1,7 +1,4 @@
 <?php
-require_once 'MotorWay.php';
-
-/**
 
 require_once 'Bicycle.php';
 
@@ -57,5 +54,4 @@ $tornado->forward();
 $basicCar = new Car ('red', 2, 10);
 
 var_dump($basicCar);
- *
- * */
+
