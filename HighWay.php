@@ -1,5 +1,5 @@
 <?php
-
+require_once 'Vehicle.php';
 
 abstract class HighWay
 {
@@ -37,8 +37,5 @@ abstract class HighWay
         $this->maxSpeed = $maxSpeed;
     }
 
-    abstract public function addVehicle();
-
-
-
+    abstract public function addVehicle(Vehicle $vehicle);
 }

@@ -10,10 +10,10 @@ final class PedestrianWay extends HighWay
         $this->maxSpeed = 10;
     }
 
-    public function addVehicle()
+    public function addVehicle(Vehicle $vehicle)
     {
-        if ($this instanceof Bicycle) {
-            $currentVehicles[] = $this;
+        if ($vehicle instanceof Bicycle) {
+            $currentVehicles[] = $vehicle;
         }
     }
 

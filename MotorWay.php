@@ -9,10 +9,10 @@ final class MotorWay extends HighWay
         $this->maxSpeed = 130;
     }
 
-    public function addVehicle()
+    public function addVehicle(Vehicle $vehicle)
     {
-        if ($this instanceof Car) {
-            $currentVehicles[] = $this;
+        if ($vehicle instanceof Car) {
+            $currentVehicles[] = $vehicle;
         }
     }
 
