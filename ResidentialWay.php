@@ -11,7 +11,7 @@ final class ResidentialWay extends HighWay
 
     public function addVehicle(Vehicle $vehicle)
     {
-            $currentVehicles[] = $vehicle;
+            $this->currentVehicles[] = $vehicle;
     }
 
 
