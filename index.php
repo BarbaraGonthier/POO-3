@@ -5,16 +5,26 @@ require_once 'Car.php';
 require_once 'Camion.php';
 
 
+$car = new Car('green', 4, 'electric');
+$car->setParkBrake(true);
+try {
+    $car->start();
+}
+catch (exception $e) {
+   echo $message = 'your car cannot start: '.$e->getMessage();
+    $car->setParkBrake(false);
+}finally{
+    echo 'Ma voiture roule comme un donut';
+}
+
+echo $car->start();
+echo $car->forward();
+
+exit();
 
 $bicycle = new Bicycle('blue', 1);
 echo $bicycle->forward();
 var_dump($bicycle);
-
-
-
-$car = new Car('green', 4, 'electric');
-echo $car->forward();
-var_dump($car);
 
 
 
@@ -30,13 +40,9 @@ echo '<br> Vitesse du camion : ' . $camion->getCurrentSpeed() . ' km/h' . '<br>'
 echo $camion->brake();
 
 
-$tesla = new Car('black', 4);
-$ferrari = new Car('red', 2);
 
-
-$bike = new Bicycle('blue');
+$bike = new Bicycle('blue', 2);
 var_dump($bike);
-
 
 $bike->setCurrentSpeed (5);
 var_dump($bike);
@@ -48,12 +54,6 @@ echo $bike->brake();
 echo '<br> Vitesse du vélo : ' . $bike->getCurrentSpeed() . ' km/h' . '<br>';
 echo $bike->brake();
 
-$rockrider = new Bicycle('yellow');
-
-
-$tornado = new Bicycle('black');
-
-$tornado->forward();
 
 $basicCar = new Car ('red', 2, 10);
 

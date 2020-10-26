@@ -23,12 +23,6 @@ class Car extends Vehicle
         if ($this->hasParkBrake===true) {
             throw new Exception ('the parkbrake is on');
         }else{ $message = 'Car is on'; }
-        try {
-            $this->hasParkBrake;
-        }
-        catch (exception $e) {
-            $message = 'your car cannot start: '.$e->getMessage();
-        }
         return $message;
     }
 
