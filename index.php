@@ -4,7 +4,7 @@ require_once 'Bicycle.php';
 require_once 'Car.php';
 require_once 'Camion.php';
 
-
+/**
 $car = new Car('green', 4, 'electric');
 $car->setParkBrake(true);
 try {
@@ -20,7 +20,7 @@ catch (exception $e) {
 echo $car->start();
 echo $car->forward();
 
-exit();
+
 
 $bicycle = new Bicycle('blue', 1);
 echo $bicycle->forward();
@@ -58,4 +58,4 @@ echo $bike->brake();
 $basicCar = new Car ('red', 2, 10);
 
 var_dump($basicCar);
-
+*/
