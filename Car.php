@@ -59,12 +59,12 @@ class Car extends Vehicle implements LightableInterface
         $this->hasParkBrake = $hasParkBrake;
     }
 
-    public function switchOn(): string
+    public function switchOn(): bool
     {
         return true;
     }
 
-    public function switchOff(): string
+    public function switchOff(): bool
     {
         return false;
     }
