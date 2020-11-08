@@ -3,6 +3,11 @@
 require_once 'Bicycle.php';
 require_once 'Car.php';
 require_once 'Camion.php';
+require_once 'Speedometer.php';
+
+echo Speedometer::convertKilometersToMiles(10);
+echo Speedometer::convertMilesToKilometers(10);
+
 
 /**
 $car = new Car('green', 4, 'electric');
